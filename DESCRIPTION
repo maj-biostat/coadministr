@@ -1,0 +1,25 @@
+Package: coadministr
+Type: Package
+Title: Trial simulator for coadministration design
+Version: 1.0
+Date: 2021-04-07
+Authors@R: 
+    person(given = "Mark",
+           family = "Mark",
+           role = c("aut", "cre"),
+           email = "mark@example.com")
+Description: Simulates data and trial progression for rct evaluting adverse
+    event rates associated with coadministration of covid19 and flu vaccine 
+    relative to covid19 and placebo. Multiple interim analyses, constructed
+    so that decisions can be made on the basis of inferiority and also
+    non-inferiority.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Biarch: true
+Depends: 
+    R (>= 3.4.0)
+Imports: 
+    coadministr.stanc,
+    rstan,
+    data.table
